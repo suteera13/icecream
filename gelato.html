@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="detailed.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <title>gelato</title>
+</head>
+<body>
+
+<div class="bgnav">
+    <ul>
+        <li class="lii">
+            <b><a class="left brn" href="index.html">SUTEERA</a></b>
+        </li>
+        <div class="right">
+            <li><a href="standard.html">standard</a></li>
+            <li><a href="granita.html">granita</a></li>
+            <div class="dropdown">
+                <li><a href="#">more</a></li>
+                <div class="dropdown-content">
+                    <a class="link" href="sorbet.html">sorbet</a>
+                    <a class="link" href="sherbet.html">sherbet</a>
+                    <a class="link" href="softserve.html">softserve</a>
+                    <a class="link" href="gelato.html">gelato</a>
+                    <a class="link" href="yogurt.html">yogurt</a>
+                </div>
+            </div>
+        </div>
+    </ul>
+</div>
+
+<div class="box-ice">
+    <div class="left width">
+        <br>
+        <h1>gelato</h1>
+        <h2>ice cream</h2>
+        <br>
+        <p>
+            คำว่า gelato เป็นภาษาอิตาเลี่ยน มาจากคำว่า frozen มีต้นกำเนิดจากอิตาลี และมีปริมาณไขมันน้อยกว่าไอศกรีมอื่นๆ ทำให้ได้รับรสชาติได้อย่างเต็มที่ชัดเจน  
+            เจลาโต้ยังมีปริมาณอากาศ (overrun) น้อยกว่าไอศกรีมทั่วไป เนื้อจึงแน่น แต่เนียนนุ่มลิ้น
+        </p>
+        <br>
+        <h2>Ingredient <i class="material-icons" onclick="Ingredient()" id="myBtn">arrow_drop_down</i></h2>
+        <span id="dots">...</span>
+        <p id="more" class="hid">
+            <br>วิธีทำซอฟต์เสิร์ฟใบเตย
+            <br>1. นมสด 400 มิลลิลิตร
+            <br>2. เฮฟวี่ครีม 100 มิลลิลิตร
+            <br>3. น้ำตาล 80 กรัม
+            <br>4. วนิลลาสกัด 1 ช้อนชา
+            <a href="https://sistacafe.com/summaries/33328" class="button">อ้างอิง</a>
+        </p>
+        <br><br>
+        <h2>Recipe <i class="material-icons" onclick="Recipe()" id="myBtnn">arrow_drop_down</i></h2>
+        <span id="dot">...</span>
+        <p id="moree" class="hid">
+            <br>1. ใส่นม เฮฟวี่ครีม น้ำตาลกับวานิลลาสกัดลงในหม้อ คนทุกอย่างให้เข้ากันดี
+            <br>2. ตั้งไฟกลางแล้วคนต่อให้น้ำตาลละลาย พอเริ่มเดือดเป็นฟองปุดๆ ก็ปิดไฟ
+            <br>3. วางชามซ้อนในชามน้ำแข็งอีกที จากนั้นเทส่วนผสมลงไป พักให้เย็นตัวซักครู่และเอาแช่ช่องฟรีซอย่างน้อย 3 ชั่วโมงขึ้นไป
+            <br>4. เตรียมเครื่องทำไอศกรีมให้เรียบร้อย ( สำหรับคนที่ต้องการทำเก็บไว้นานๆ หน่อย อย่าลืมแช่ถ้วยที่จะใช้ใส่ไอศกรีมใน
+            ช่องฟรีซก่อนซัก 8-10 ชั่วโมงด้วยล่ะ แต่ถ้าจะทำกินเลยก็ไม่จำเป็นค่ะ )
+            <br>5. เปิดเครื่องแล้วเทส่วนผสมลงไปทันที
+            <br>6. ปั่นนานประมาณ 20 นาที
+            <br>7. ถ้าใครไม่มีเครื่องทำไอศกรีม จะใช้วิธีเทลงในถาดและเอาแช่ช่องฟรีซแทนก็ได้ค่ะ แต่ต้องคอยใช้ช้อนคนทุกๆ ชั่วโมง
+            ประมาณ 3-4 ครั้งนะคะ
+            <br>8. ตักใส่ถ้วยที่แช่เตรียมไว้
+            <a href="https://sistacafe.com/summaries/33328" class="button">อ้างอิง</a>
+        </p>
+    </div>
+    <div class="right">
+        <img src="https://i.pinimg.com/564x/7f/2a/7b/7f2a7b4b04ddee28133e253c81bad72b.jpg">
+        <br><a href="https://nomadbiba.com/best-gelato-in-rome/" class="right button">ภาพจาก</a>
+    </div>
+    
+</div>
+
+
+
+</body>
+</html>
+<script>
+    function Ingredient() {
+      var dots = document.getElementById("dots");
+      var moreText = document.getElementById("more");
+      var btnText = document.getElementById("myBtn");
+    
+      if (dots.style.display === "none") {
+        dots.style.display = "inline";
+        btnText.innerHTML = "arrow_drop_down"; 
+        moreText.style.display = "none";
+      } else {
+        dots.style.display = "none";
+        btnText.innerHTML = "arrow_drop_up"; 
+        moreText.style.display = "inline";
+      }
+    }
+    function Recipe() {
+      var dots = document.getElementById("dot");
+      var moreText = document.getElementById("moree");
+      var btnText = document.getElementById("myBtnn");
+    
+      if (dots.style.display === "none") {
+        dots.style.display = "inline";
+        btnText.innerHTML = "arrow_drop_down"; 
+        moreText.style.display = "none";
+      } else {
+        dots.style.display = "none";
+        btnText.innerHTML = "arrow_drop_up"; 
+        moreText.style.display = "inline";
+      }
+    }
+</script>
+    

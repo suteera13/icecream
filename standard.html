@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="detailed.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <title>standard</title>
+</head>
+<body>
+
+<div class="bgnav">
+    <ul>
+        <li class="lii">
+            <b><a class="left brn" href="index.html">SUTEERA</a></b>
+        </li>
+        <div class="right">
+            <li><a href="standard.html">standard</a></li>
+            <li><a href="granita.html">granita</a></li>
+            <div class="dropdown">
+                <li><a href="#">more</a></li>
+                <div class="dropdown-content">
+                    <a class="link" href="sorbet.html">sorbet</a>
+                    <a class="link" href="sherbet.html">sherbet</a>
+                    <a class="link" href="softserve.html">softserve</a>
+                    <a class="link" href="gelato.html">gelato</a>
+                    <a class="link" href="yogurt.html">yogurt</a>
+                </div>
+            </div>
+        </div>
+    </ul>
+</div>
+
+<div class="box-ice">
+    <div class="left width">
+        <br>
+        <h1>standard</h1>
+        <h2>ice cream</h2>
+        <br>
+        <p>
+            เป็นไอศกรีมที่มีส่วนผสมของนมหรือผลิตภัณฑ์จากนม น้ำตาล และวัตถุดิบที่ใช้ในการปรุงแต่งกลิ่น รส โดยไม่เติมสารอื่นๆนอกเหนือจาก 
+            ส่วนผสมหลักเลย เนื้อไอศกรีมจะเหนียว เนียน นุ่มลิ้น โดยต้องผ่านขั้นตอนการตีปั่นให้ความเย็นจนเหนียวหนืด แล้วแช่แข็งอีกครั้งจึงจะรับประทานได้
+        </p>
+        <br>
+        <h2>Ingredient <i class="material-icons" onclick="Ingredient()" id="myBtn">arrow_drop_down</i></h2>
+        <span id="dots">...</span>
+        <p id="more" class="hid">
+            <br>1. ครีม 250 มิลลิลิตร 
+            <br>2. ไข่ขาวของไข่ไก่ 2 ฟอง
+            <br>3. น้ำตาลทราย 1/2 ถ้วยตวง
+            <br>4. กลูโคส 3 ช้อนโต๊ะ
+            <br>5. เกลือ เล็กน้อย
+            <br>6. กลิ่นนมสดญี่ปุ่น 1/8 ช้อนชา
+            <br>7. นม 500 มิลลิลิตร
+            <a href="http://www.foodtravel.tv/recipe.aspx?viewid=3703" class="button">อ้างอิง</a>
+        </p>
+        <br><br>
+        <h2>Recipe <i class="material-icons" onclick="Recipe()" id="myBtnn">arrow_drop_down</i></h2>
+        <span id="dot">...</span>
+        <p id="moree" class="hid">
+            <br>1. ผสมไข่ขาวของไข่ไก่ น้ำตาลทราย กลูโคส และเกลือ ให้เข้ากัน ตีให้น้ำตาลละลาย
+            <br>2. เทนมและครีม ผสมรวมกับส่วนผสมไข่ คนให้เข้ากันดี จึงใส่กลิ่นนมสดลงไป คนให้เข้ากันอีกครั้ง
+            <br>3. นำส่วนผสมเก็บใส่กล่องปิดฝา แช่ในช่องแช่แข็ง แล้วคอยนำส่วนผสมออกมาคนทุก 30 นาที - 1 ชั่วโมง ให้คอยคนให้ทั่ว และแช่แข็งประมาณ 6 ชั่วโมง 
+            จนกระทั่งส่วนผสมแข็งตัวดี
+            <a href="http://www.foodtravel.tv/recipe.aspx?viewid=3703" class="button">อ้างอิง</a>
+        </p>
+    </div>
+    <div class="right">
+        <img src="https://images.pexels.com/photos/1978181/pexels-photo-1978181.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+        <br><a href="https://www.pexels.com/th-th/photo/1978181/" class="right button">ภาพจาก</a>
+    </div>
+    
+    
+</div>
+
+
+
+</body>
+</html>
+<script>
+    function Ingredient() {
+      var dots = document.getElementById("dots");
+      var moreText = document.getElementById("more");
+      var btnText = document.getElementById("myBtn");
+    
+      if (dots.style.display === "none") {
+        dots.style.display = "inline";
+        btnText.innerHTML = "arrow_drop_down"; 
+        moreText.style.display = "none";
+      } else {
+        dots.style.display = "none";
+        btnText.innerHTML = "arrow_drop_up"; 
+        moreText.style.display = "inline";
+      }
+    }
+    function Recipe() {
+      var dots = document.getElementById("dot");
+      var moreText = document.getElementById("moree");
+      var btnText = document.getElementById("myBtnn");
+    
+      if (dots.style.display === "none") {
+        dots.style.display = "inline";
+        btnText.innerHTML = "arrow_drop_down"; 
+        moreText.style.display = "none";
+      } else {
+        dots.style.display = "none";
+        btnText.innerHTML = "arrow_drop_up"; 
+        moreText.style.display = "inline";
+      }
+    }
+</script>
+    

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="detailed.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <title>sherbet</title>
+</head>
+<body>
+
+<div class="bgnav">
+    <ul>
+        <li class="lii">
+            <b><a class="left brn" href="index.html">SUTEERA</a></b>
+        </li>
+        <div class="right">
+            <li><a href="standard.html">standard</a></li>
+            <li><a href="granita.html">granita</a></li>
+            <div class="dropdown">
+                <li><a href="#">more</a></li>
+                <div class="dropdown-content">
+                    <a class="link" href="sorbet.html">sorbet</a>
+                    <a class="link" href="sherbet.html">sherbet</a>
+                    <a class="link" href="softserve.html">softserve</a>
+                    <a class="link" href="gelato.html">gelato</a>
+                    <a class="link" href="yogurt.html">yogurt</a>
+                </div>
+            </div>
+        </div>
+    </ul>
+</div>
+
+<div class="box-ice">
+    <div class="left width">
+        <br>
+        <h1>sherbet</h1>
+        <h2>ice cream</h2>
+        <br>
+        <p>
+            มีส่วนผสมของผลไม้ น้ำตาล บวกกับนม ครีม ไข่ขาว เจลาติน หรือเนยอีกเล็กน้อย เนื้อจึงมีความเหนียว เนียนละเอียด มีความเข้มข้นกว่าซอร์เบต์ 
+            แต่ยังเบากว่าไอศกรีมธรรมดา รสชาติออกเปรี้ยวหรือหวานแบบกลมกล่อม ไม่เข้มข้นแบบซอร์เบต์
+        </p>
+        <br>
+        <h2>Ingredient <i class="material-icons" onclick="Ingredient()" id="myBtn">arrow_drop_down</i></h2>
+        <span id="dots">...</span>
+        <p id="more" class="hid">
+            <br>วิธีทำไอศกรีมเชอร์เบตแคนตาลูป
+            <br>1. เนื้อแคนตาลูปเขียว ประมาณ 4 ถ้วย
+            <br>2. น้ำเปล่า 1 ถ้วย
+            <br>3. น้ำตาลทราย 1 ถ้วย
+            <br>4. น้ำเลมอน 1 ลูก
+            <br>5. เกลือป่นนิดหน่อย
+            <br>6. ​วิปปิ้งครีม ประมาณ 1/2 ถ้วย
+            <a href="https://cooking.kapook.com/view120880.html" class="button">อ้างอิง</a>
+        </p>
+        <br><br>
+        <h2>Recipe <i class="material-icons" onclick="Recipe()" id="myBtnn">arrow_drop_down</i></h2>
+        <span id="dot">...</span>
+        <p id="moree" class="hid">
+            <br>1. ทำน้ำเชื่อมโดยการต้มน้ำเปล่ากับน้ำตาลทรายให้ละลาย ยกลงจากเตา พักไว้ให้เย็นก่อนแล้วค่อยเอาไปแช่ตู้เย็นให้เย็นจัด ๆ (เราแช่ในช่องฟรีซให้เป็นเกล็ดน้ำแข็ง)
+            <br>2. ปอกเปลือกแคนตาลูป หั่นเป็นชิ้น ๆ แล้วน้ำไปแช่เย็นไว้ให้เย็นจัด ๆ หรือเอาเข้าช่องฟรีซก็ได้
+            <br>3. หลังจากแช่เย็นทั้งน้ำเชื่อมและแคนตาลูปได้ที่แล้วก็เอาออกมาปั่นให้ละเอียด ใส่ลงในเครื่องปั่นน้ำผลไม้ เติมน้ำมะนาว เกลือป่น วิปปิ้งครีมลงไปปั่นจนเนียน
+            <br>4. เทใส่กล่องปิดฝาหรือปิดหน้าด้วยพลาสติกถนอมอาหาร นำเข้าแช่ในช่องฟรีซให้เป็นเกล็ดน้ำแข็งแล้วก็เอาออกมาปั่นอีกรอบ (ทั้งหมดปั่นอยู่ประมาณ 2-3 รอบ) 
+            ก็จะได้เนื้อซอร์เบตที่เนียนสวย ก่อนแช่ฟรีซชิมรสชาติตามใจ ตักใส่ถ้วย พร้อมเสิร์ฟ
+            <a href="https://cooking.kapook.com/view120880.html" class="button">อ้างอิง</a>
+        </p>
+    </div>
+    <div class="right">
+        <img src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F19%2F2008%2F06%2F16%2Fcherry-sherbet-su-1816276-x.jpg">
+        <br><a href="https://www.myrecipes.com/recipe/cherry-sherbet" class="right button">ภาพจาก</a>
+    </div>
+    
+</div>
+
+
+
+</body>
+</html>
+<script>
+    function Ingredient() {
+      var dots = document.getElementById("dots");
+      var moreText = document.getElementById("more");
+      var btnText = document.getElementById("myBtn");
+    
+      if (dots.style.display === "none") {
+        dots.style.display = "inline";
+        btnText.innerHTML = "arrow_drop_down"; 
+        moreText.style.display = "none";
+      } else {
+        dots.style.display = "none";
+        btnText.innerHTML = "arrow_drop_up"; 
+        moreText.style.display = "inline";
+      }
+    }
+    function Recipe() {
+      var dots = document.getElementById("dot");
+      var moreText = document.getElementById("moree");
+      var btnText = document.getElementById("myBtnn");
+    
+      if (dots.style.display === "none") {
+        dots.style.display = "inline";
+        btnText.innerHTML = "arrow_drop_down"; 
+        moreText.style.display = "none";
+      } else {
+        dots.style.display = "none";
+        btnText.innerHTML = "arrow_drop_up"; 
+        moreText.style.display = "inline";
+      }
+    }
+</script>
+    

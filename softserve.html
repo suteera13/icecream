@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="detailed.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <title>soft serve</title>
+</head>
+<body>
+
+<div class="bgnav">
+    <ul>
+        <li class="lii">
+            <b><a class="left brn" href="index.html">SUTEERA</a></b>
+        </li>
+        <div class="right">
+            <li><a href="standard.html">standard</a></li>
+            <li><a href="granita.html">granita</a></li>
+            <div class="dropdown">
+                <li><a href="#">more</a></li>
+                <div class="dropdown-content">
+                    <a class="link" href="sorbet.html">sorbet</a>
+                    <a class="link" href="sherbet.html">sherbet</a>
+                    <a class="link" href="softserve.html">softserve</a>
+                    <a class="link" href="gelato.html">gelato</a>
+                    <a class="link" href="yogurt.html">yogurt</a>
+                </div>
+            </div>
+        </div>
+    </ul>
+</div>
+
+<div class="box-ice">
+    <div class="left width">
+        <br>
+        <h1>soft serve</h1>
+        <h2>ice cream</h2>
+        <br>
+        <p>
+            ไอศกรีมนมเนื้อเนียนนุ่ม เสิร์ฟที่อุณหภูมิสูงกว่าไอศกรีมชนิดอื่น และไม่ต้องแช่เย็นก่อนเสิร์ฟ แต่จะนำส่วนผสมใส่เครื่องแล้วบีบใส่โคนหรือถ้วยไอศกรีมได้เลย 
+            เนื้อสัมผัสจึงเนียนนุ่มละลายในปาก และละลายเร็วมาก
+        </p>
+        <br>
+        <h2>Ingredient <i class="material-icons" onclick="Ingredient()" id="myBtn">arrow_drop_down</i></h2>
+        <span id="dots">...</span>
+        <p id="more" class="hid">
+            <br>วิธีทำซอฟต์เสิร์ฟใบเตย
+            <br>1. น้ำตาลทราย 120 กรัม
+            <br>2. ครีมสด 80 กรัม
+            <br>3. นมผง 40 กรัม
+            <br>4. เกลือ ½ ช้อนชา
+            <br>5. ใบเตย 9-10 ใบ
+            <br>6. น้ำแข็งแห้ง 600 กรัม
+            <a href="https://www.wongnai.com/recipes/pandan-soft-serve?ref=ct" class="button">อ้างอิง</a>
+        </p>
+        <br><br>
+        <h2>Recipe <i class="material-icons" onclick="Recipe()" id="myBtnn">arrow_drop_down</i></h2>
+        <span id="dot">...</span>
+        <p id="moree" class="hid">
+            <br>1. ปั่นใบเตยและนมสดเข้าด้วยกัน กรองเอาเศษใบเตยออกแล้วนำไปตั้งไฟ ใส่น้ำตาล เกลือและนมผง คนจนส่วนผสมละลายเข้ากันดีแล้วยกออก ใส่ครีมแล้วพักไว้จนเย็น
+            <br>2. นำน้ำแข็งแห้งมาห่อผ้าแล้วทุบให้ละเอียด 
+            <br>3. ใส่น้ำแข็งแห้งป่นละเอียดลงในส่วนผสมไอศครีม คอยคนเรื่อย ๆ เพื่อความเย็นกระจายอย่างทั่วถึง เมื่อส่วนผสมจับตัวเป็นไอศครีมแล้ว นำใส่ถุงบีบ พร้อมเสิร์ฟ
+            <a href="https://www.wongnai.com/recipes/pandan-soft-serve?ref=ct" class="button">อ้างอิง</a>
+        </p>
+    </div>
+    <div class="right">
+        <img src="https://images.pexels.com/photos/4540356/pexels-photo-4540356.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+        <br><a href="https://www.pexels.com/th-th/photo/4540356/" class="right button">ภาพจาก</a>
+    </div>
+    
+</div>
+
+
+
+</body>
+</html>
+<script>
+    function Ingredient() {
+      var dots = document.getElementById("dots");
+      var moreText = document.getElementById("more");
+      var btnText = document.getElementById("myBtn");
+    
+      if (dots.style.display === "none") {
+        dots.style.display = "inline";
+        btnText.innerHTML = "arrow_drop_down"; 
+        moreText.style.display = "none";
+      } else {
+        dots.style.display = "none";
+        btnText.innerHTML = "arrow_drop_up"; 
+        moreText.style.display = "inline";
+      }
+    }
+    function Recipe() {
+      var dots = document.getElementById("dot");
+      var moreText = document.getElementById("moree");
+      var btnText = document.getElementById("myBtnn");
+    
+      if (dots.style.display === "none") {
+        dots.style.display = "inline";
+        btnText.innerHTML = "arrow_drop_down"; 
+        moreText.style.display = "none";
+      } else {
+        dots.style.display = "none";
+        btnText.innerHTML = "arrow_drop_up"; 
+        moreText.style.display = "inline";
+      }
+    }
+</script>
+    
